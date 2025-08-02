@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #dbeeff;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+}
+
+/* Splash screen */
+#splash-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #dbeeff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 2s ease-in-out forwards;
+  animation-delay: 5s;
+  z-index: 9999;
+}
+
+.logo {
+  width: 600px;
+  animation: zoomIn 2s ease-in-out;
+}
+
+.nama-toko {
+  font-size: 4.0rem;
+  color: #7a5ba6;
+  margin-top: 2.0rem;
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+.konten {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3.5rem;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 4.0rem;
+  color: #4f3474;
+}
+
+
+.highlight {
+  color: #7a5ba6;
+}
+
+.musik {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+
+/* Produk */
+.produk-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.produk-slider {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  touch-action: pan-y;
+}
+
+.produk {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
+  justify-content: center;
+  background: #ffffffcc;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.produk-img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  margin-right: 2rem;
+}
+
+.produk-info {
+  text-align: left;
+  max-width: 600px;
+}
+
+.produk-info h3 {
+  font-size: 3.0rem;
+  color: #4a3474;
+}
+
+.produk-info p {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.harga {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.btn-wa {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #7a5ba6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.btn-wa:hover {
+  background-color: #5d4386;
+}
+
+/* Tombol navigasi */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #7a5ba6;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .produk {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .produk-img {
+    margin: 0 0 1rem 0;
+  }
+
+  .produk-info {
+    text-align: center;
+  }
+}
+
+.rating {
+  font-size: 1.8rem;
+  color: gold;
+  margin: 1rem 0;
+}
+
+.komentar {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.produk.penutup {
+  flex-direction: column;
+  background: transparent;
+  box-shadow: none;
+  justify-content: center;
+}
+
+.btn-kembali {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #7a5ba6;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-kembali:hover {
+  background-color: #5d4386;
+}
+
+header p {
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #4f3474;
+  margin-top: 1rem;
+}
