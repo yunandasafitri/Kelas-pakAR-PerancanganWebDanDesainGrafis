@@ -1,3 +1,7 @@
+Nama : Yunanda Safitri
+NIM : 23110310053
+Prodi : Bisnis Digital 4C
+
 🌸 Reve Muguet – Elegant Tripod Store
 Reve Muguet adalah sebuah website katalog interaktif yang menampilkan produk tripod elegan dengan desain bertema Lily of the Valley. Website ini dirancang agar responsif, menarik secara visual, dan mudah digunakan, baik di desktop maupun perangkat seluler.
 
